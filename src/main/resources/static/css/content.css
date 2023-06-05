@@ -1,0 +1,68 @@
+/* Content Styling */
+
+.content {
+    margin: 60px auto auto auto; /* Adjust the margin-top value to match the height of your navbar */
+    max-width: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome {
+
+    width: 100%;
+    min-height: 300px;
+
+    padding-top: 60px;
+
+    background-image: url("/images/water.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#about {
+
+    width: 100%;
+    min-height: 300px;
+
+    padding-top: 60px;
+
+}
+
+#services {
+
+    width: 100%;
+    min-height: 300px;
+
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+#services > div {
+    flex: 1 1 50%;
+}
+
+#request {
+
+    width: 100%;
+    min-height: 300px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+#request form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}

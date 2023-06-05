@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/css/content.css">
+    <link rel="stylesheet" type="text/css" href="/css/general.css">
+    <title>Waypoint Aquatics</title>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#welcome"><h1>Waypoint Aquatics</h1></a>
+        <nav>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#request">Request</a></li>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <section id="welcome">
+            <p1>Waypoint Aquatics connects certified lifeguards with private parties in the Fraser Valley area.</p1>
+            <a href="#request"><button>Request a Lifeguard</button></a>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p1>
+                We are a small team of lifeguards who are passionate about water safety and want to make sure that everyone has a safe and fun time in the water.
+                Our lifeguards are all certified by the Lifesaving Society and have years of experience working in public and private pools.
+            </p1>
+        </section>
+
+        <section id="services">
+
+            <div class="services">
+                <h2>Services</h2>
+                
+                <h3>Private Lifeguarding</h3>
+                <ul>
+                    <li>Hire a private lifeguard, certified with the Lifesaving Society's "National Lifeguard" certificate</li>
+                    <li>$75 an hour</li>
+                </ul>
+
+                <h3>Private Swimming Lessons</h3>
+                <ul>
+                    <li>Hire a private swimming instructor, certified with the Lifesaving Society's "Swim Instructor" certificate</li>
+                    <li>$75 an hour</li>
+                </ul>
+
+            </div>
+
+            <div class="policies">
+                <h2>Policies</h2>
+                <ul>
+                    <li>One lifeguard can guard up to 40 people</li>
+                    <li>Availibility of Lifeguards can vary</li>
+                    <li>Waypoint Aquatics will only accept jobs within the Fraser Valley area</li>
+                    <li>Fees may be subject to change, depending on location</li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <section id="request">
+            <h2>Request a Service</h2>
+            <form action="/request" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required>
+                <label for="date">Proposed Date</label>
+                <input type="date" name="date" id="date" required>
+                <label for="time">Proposed Start Time</label>
+                <input type="time" name="starttime" id="time" required>
+                <label for="time">Proposed End Time</label>
+                <input type="time" name="endtime" id="time" required>
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" required>
+                <label for="number">Party Size</label>
+                <input type="number" name="size" id="number" required>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <input type="submit" value="Request">
+            </form>
+        </section>
+    </div>
+</body>
+</html>

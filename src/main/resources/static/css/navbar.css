@@ -1,0 +1,45 @@
+
+/* Navbar Styling */
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    background-color: #4a5881;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: #000;
+}
