@@ -48,3 +48,10 @@
 .navbar li a:hover {
     color: #000;
 }
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+}
