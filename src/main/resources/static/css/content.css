@@ -1,7 +1,7 @@
 /* Content Styling */
 
 .content {
-    margin: 60px auto auto auto; /* Adjust the margin-top value to match the height of your navbar */
+    margin: auto; /* Adjust the margin-top value to match the height of your navbar */
     max-width: 1024px;
 
     display: flex;
@@ -14,41 +14,80 @@
     width: 100%;
     min-height: 300px;
 
+}
+
+#spacer {
+    height: 60px;
+}
+
+#welcome .mission {
+    width: 100%;
+    min-height: 300px;
+
     padding-top: 60px;
 
     background-image: url("/images/water.jpg");
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
+}
+
+#welcome .mission > a {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
 }
 
 #about {
 
     width: 100%;
-    min-height: 300px;
+    padding: 60px 20px 0px 20px;
+    box-sizing: border-box;
 
-    padding-top: 60px;
+}
 
+#wave1 {
+    background-image: url("/images/wave1.svg");
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 100%;
 }
 
 #services {
 
     width: 100%;
-    min-height: 300px;
 
-    padding-top: 60px;
+    padding: 60px 20px 0px 20px;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 
+    background-color: #4a5881;
+    color: white;
+
 }
 
 #services > div {
     flex: 1 1 50%;
+    padding: 20px;
+}
+
+#wave2 {
+    background-image: url("/images/wave2.svg");
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
 }
 
 #request {
@@ -59,10 +98,46 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    background-color: #4a5881;
+    color: white;
+
+}
+
+#request > h2 {
+    padding: 20px;
 }
 
 #request form {
     display: flex;
     flex-direction: column;
     align-items: left;
-}
+    padding: 20px;
+  }
+  
+  #request form label {
+    margin-bottom: 10px;
+  }
+  
+  #request form input,
+  #request form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #request form input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  
+  #request form input[type="submit"]:hover {
+    background-color: #ffd700; /* Adjust the hover color as desired */
+  }
+  
+
