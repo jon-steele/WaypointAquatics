@@ -14,7 +14,7 @@
 	<name>web</name>
 	<description>Waypoint Aquatics</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17.0.7</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
