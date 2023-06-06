@@ -36,6 +36,11 @@
     color: white;
 }
 
+#welcome .mission > p1 {
+    padding: 20px;
+    text-align: center;
+}
+
 #welcome .mission > a {
     background-color: yellow;
     color: black;
@@ -87,15 +92,6 @@
     padding: 20px;
     border-left: 1px solid white;
     height: 200px;
-}
-
-#wave2 {
-    background-image: url("/images/wave2.svg");
-    background-size: 100% auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
 }
 
 #request {
