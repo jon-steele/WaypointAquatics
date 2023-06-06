@@ -43,6 +43,11 @@
     font-weight: 400;
 }
 
+#welcome .mission > a:hover {
+    background-color: green;
+    color: white;
+}
+
 #about {
 
     width: 100%;
@@ -129,15 +134,13 @@
   #request form input[type="submit"] {
     background-color: yellow;
     color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
     font-weight: 400;
   }
   
   #request form input[type="submit"]:hover {
-    background-color: #ffd700; /* Adjust the hover color as desired */
+    background-color: green;
+    color: white;
   }
-  
 
