@@ -30,11 +30,11 @@
     align-items: flex-start;
 }
 
-.navbar .logo-and-name > a {
+.navbar .logo-and-name {
     height: 60px;
 }
 
-.navbar .logo-and-name > a > h1 {
+.navbar .logo-and-name h1 {
     padding: 0px;
     margin: 0px;
     height: 60px;
