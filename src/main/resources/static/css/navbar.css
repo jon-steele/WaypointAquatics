@@ -22,6 +22,24 @@
     align-items: center;
 }
 
+.navbar .logo-and-name {
+    height: 60px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.navbar .logo-and-name > a {
+    height: 60px;
+}
+
+.navbar .logo-and-name > a > h1 {
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+}
+
 .navbar nav {
     display: flex;
     flex-direction: row;
@@ -53,5 +71,11 @@
 @media (max-width: 767px) {
     .navbar h1 {
         font-size: 20px;
+        display: none;
     }
+}
+
+.navbar .logo {
+    width: 60px;
+    height: 60px;
 }

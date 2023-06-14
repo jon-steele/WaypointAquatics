@@ -111,6 +111,16 @@
     margin-bottom: 20px;
 }
 
+#services .mail-link {
+    color: white;
+    text-decoration: underline;
+}
+
+#services .mail-link:hover {
+    color: black;
+    background-color: white;
+}
+
 #request {
 
     width: 100%;
