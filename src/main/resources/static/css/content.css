@@ -28,8 +28,8 @@
     box-sizing: border-box;
 
     background-image: url("/images/background.jpg");
-    background-size: 100% auto;
-    background-position: bottom;
+    background-size: cover;
+    background-position: middle;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
