@@ -1,7 +1,8 @@
 /* Content Styling */
 
 .content {
-    margin: auto; /* Adjust the margin-top value to match the height of your navbar */
+    margin: auto;
+    /* Adjust the margin-top value to match the height of your navbar */
     max-width: 1024px;
 
     display: flex;
@@ -12,7 +13,6 @@
 #welcome {
 
     width: 100%;
-    min-height: 300px;
 
 }
 
@@ -22,13 +22,15 @@
 
 #welcome .mission {
     width: 100%;
-    min-height: 300px;
+    min-height: 680px;
 
     padding-top: 60px;
     box-sizing: border-box;
 
-    background-image: url("/images/water.jpg");
-    background-size: 100% 100%;
+    background-image: url("/images/background.jpg");
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,12 +38,14 @@
     color: white;
 }
 
-#welcome .mission > p1 {
-    padding: 20px;
+#welcome .mission>p1 {
+    padding: 10px;
     text-align: center;
+    background-color: #4a5881;
+    border-radius: 10px;
 }
 
-#welcome .mission > a {
+#welcome .mission>a {
     background-color: yellow;
     color: black;
     padding: 10px;
@@ -49,7 +53,7 @@
     font-weight: 400;
 }
 
-#welcome .mission > a:hover {
+#welcome .mission>a:hover {
     background-color: green;
     color: white;
 }
@@ -93,17 +97,17 @@
     }
 }
 
-#services > div {
+#services>div {
     box-sizing: border-box;
     flex: 1 1 50%;
     border-left: 1px solid white;
 }
 
-#services > div > h2 {
+#services>div>h2 {
     padding: 20px;
 }
 
-#services > div li {
+#services>div li {
     margin-bottom: 20px;
 }
 
@@ -120,7 +124,7 @@
 
 }
 
-#request > h2 {
+#request>h2 {
     padding: 20px;
 }
 
@@ -129,30 +133,49 @@
     flex-direction: column;
     align-items: left;
     padding: 20px;
-  }
-  
-  #request form label {
+}
+
+#request .form-item {
+    display: flex;
+    width: 100%;
+}
+
+#request form label {
     margin-bottom: 10px;
-  }
-  
-  #request form input,
-  #request form textarea {
+    width: 40%;
+    word-break: break-all;
+}
+
+#request form input,
+#request form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  #request form input[type="submit"] {
+    width: 60%;
+}
+
+#request form input[type="submit"] {
     background-color: yellow;
     color: black;
     padding: 10px;
     border-radius: 10px;
     font-weight: 400;
-  }
-  
-  #request form input[type="submit"]:hover {
+    width: 100%;
+}
+
+#request form input[type="submit"]:hover {
     background-color: green;
     color: white;
-  }
+}
 
+@media (min-width: 767px) {
+    #request form label {
+        width: 20%;
+    }
+
+    #request form input,
+    #request form textarea {
+        width: 80%;
+    }
+}

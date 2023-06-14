@@ -65,24 +65,42 @@
         <section id="request">
             <h2>Request a Lifeguard</h2>
             <form action="/request" method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" required>
-                <label for="date">Proposed Date</label>
-                <input type="date" name="date" id="date" required>
-                <label for="time">Proposed Start Time</label>
-                <input type="time" name="starttime" id="time" required>
-                <label for="time">Proposed End Time</label>
-                <input type="time" name="endtime" id="time" required>
-                <label for="location">Location</label>
-                <input type="text" name="location" id="location" required>
-                <label for="number">Party Size</label>
-                <input type="number" name="size" id="number" required>
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <div class="form-item">  
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-item">  
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-item">  
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="form-item">  
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="form-item">  
+                    <label for="time">Start Time</label>
+                    <input type="time" name="starttime" id="time" required>
+                </div>
+                <div class="form-item">  
+                    <label for="time">End Time</label>
+                    <input type="time" name="endtime" id="time" required>
+                </div>
+                <div class="form-item">  
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" required>
+                </div>
+                <div class="form-item">  
+                    <label for="number">Party Size</label>
+                    <input type="number" name="size" id="number" required>
+                </div>
+                <div class="form-item">  
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
                 <input type="submit" value="Request">
             </form>
         </section>
