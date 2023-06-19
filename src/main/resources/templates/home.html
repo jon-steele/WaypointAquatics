@@ -12,19 +12,17 @@
 
 
     <title>Waypoint Aquatics</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" th:href="@{/favicon.ico}"/>
     <meta name="description" content="Waypoint Aquatics is a hub for clients in the Fraser Valley to book lifeguard services for their events.">
     
     <meta property="og:title" content="Waypoint Aquatics">
     <meta property="og:description" content="Hire private lifeguards in the Fraser Valley.">
-    <meta property="og:image" content="/images/logo_blue.png">
-    <meta property="og:url" content="">
 </head>
 <body>
     <header class="navbar">
         <a href="#welcome">
             <div class="logo-and-name">
-                <img src="/images/logo-white.png" alt="Waypoint Aquatics Logo" class="logo">
+                <img th:src="@{/images/logo-white.png}" alt="Waypoint Aquatics Logo" class="logo">
                 <h1>Waypoint Aquatics</h1>
             </div>
         </a>

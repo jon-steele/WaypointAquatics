@@ -27,7 +27,7 @@
     padding: 60px 20px 0px 20px;
     box-sizing: border-box;
 
-    background-image: url("/images/background.jpg");
+    background-image: url("@{/images/background.jpg}");
     background-size: cover;
     background-position: middle;
     background-repeat: no-repeat;
