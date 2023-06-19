@@ -8,7 +8,7 @@ html, body {
 
 @font-face {
     font-family: 'Gothic';
-    src: url('@{/fonts/Gothic/CenturyGothic.ttf}') format('truetype');
+    src: url('../fonts/Gothic/CenturyGothic.ttf') format('truetype');
 }
 
 a {
