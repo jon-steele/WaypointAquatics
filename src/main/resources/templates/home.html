@@ -8,7 +8,7 @@
     <link th:href="@{/css/navbar.css}" rel="stylesheet" />
     <link th:href="@{/css/general.css}" rel="stylesheet" />
     <link th:href="@{/css/content.css}" rel="stylesheet" />
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
     <title>Waypoint Aquatics</title>
@@ -18,6 +18,7 @@
     <meta property="og:title" content="Waypoint Aquatics">
     <meta property="og:description" content="Hire private lifeguards in the Fraser Valley.">
 </head>
+
 <body>
     <header class="navbar">
         <a href="#welcome">
@@ -78,7 +79,7 @@
 
         <section id="request">
             <h2>Request a Lifeguard</h2>
-            <form action="./request" method="POST">
+            <form action="./request" method="POST" onsubmit="return validateForm();">
                 <div class="form-item">  
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required>
@@ -115,9 +116,25 @@
                     <label for="comments">Comments</label>
                     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
                 </div>
+
+                <div class="g-recaptcha" data-sitekey="6LcIBbImAAAAAD6J3JziAjCq-4PP8nVv0NrgqCYJ"></div>
+                
                 <input type="submit" value="Request">
             </form>
         </section>
     </div>
 </body>
+
+<script type="text/javascript">
+    function validateForm() {
+        if (grecaptcha.getResponse()){
+            return true;
+        }
+        else {
+            alert("Please complete the captcha");
+            return false;
+        }
+    }
+
+</script>
 </html>

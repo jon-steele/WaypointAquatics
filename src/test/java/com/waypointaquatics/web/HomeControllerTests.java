@@ -8,8 +8,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.waypointaquatics.web.home.HomeController;
-
+import com.waypointaquatics.web.controllers.HomeController;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class HomeControllerTests {

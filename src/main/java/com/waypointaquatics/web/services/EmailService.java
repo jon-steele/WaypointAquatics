@@ -1,4 +1,4 @@
-package com.waypointaquatics.web.mail;
+package com.waypointaquatics.web.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
