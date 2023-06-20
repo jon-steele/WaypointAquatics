@@ -67,7 +67,7 @@
 }
 
 #wave1 {
-    background-image: url("/images/wave1.svg");
+    background-image: url("../images/wave1.svg");
     background-size: 100% auto;
     background-position: bottom;
     background-repeat: no-repeat;
