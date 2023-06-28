@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.waypointaquatics</groupId>
-	<artifactId>web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>web</name>
+	<artifactId>waypoint</artifactId>
+	<version>0.0.2</version>
+	<name>waypoint</name>
 	<description>Waypoint Aquatics</description>
 	<properties>
 		<java.version>20</java.version>
