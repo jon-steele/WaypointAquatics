@@ -27,16 +27,14 @@
     width: auto;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-}
-
-.navbar .logo-and-name {
+    align-items: center;
+    justify-content: center;
     height: 60px;
 }
 
 .navbar .logo-and-name h1 {
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     height: 60px;
 }
 
